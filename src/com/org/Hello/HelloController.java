@@ -24,12 +24,12 @@ public class HelloController
 		return model;
 	}
 	
-//	@RequestMapping(value="/submitAdmissionForm.html", method = RequestMethod.POST)
-//	public ModelAndView submitAdmissionForm(@RequestParam("studentName")String name,@RequestParam("studentHobby")String hobby) {
-//		ModelAndView model = new ModelAndView("AdmissionSuccess");
-//		model.addObject("msg","Details submitted by you:: Name: "+name+ ", Hobby: " + hobby);
-//
-//		return model;
-//	}
+	@RequestMapping(value="/submitAdmissionForm.html", method = RequestMethod.POST)
+	public ModelAndView submitAdmissionForm(@RequestParam("studentName")String name,@RequestParam("studentHobby")String hobby) {
+		ModelAndView model = new ModelAndView("AdmissionSuccess");
+		model.addObject("msg","Details submitted by you:: Name: "+name+ ", Hobby: " + hobby);
+
+		return model;
+	}
 	
 }
